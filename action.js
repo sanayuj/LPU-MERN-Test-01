@@ -5,8 +5,10 @@ function random(){
     let result=""
     let randomValue=Math.floor(Math.random()*emojies.length)
     let picker=document.getElementsByClassName("emoji_display")
-    picker.
+    picker.textContent=emojies[randomValue]
     
 }
+
+
 
 random()
