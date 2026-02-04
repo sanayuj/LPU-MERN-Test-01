@@ -19,3 +19,10 @@ btn.addEventListener("click",()=>{
 random()
 })
 
+let copyText=document.getElementById("copy_text")
+copyText.addEventListener("click",()=>{
+    let picker=document.getElementsByClassName("emoji_display")[0]
+    let text=picker.textContent
+    navigator.clipboard.writeText(text)
+    alert("Emoji Copied to Clipboard!")
+})
